@@ -93,7 +93,7 @@ memes.forEach(meme => {
     div.dataset.id = meme.id;
     div.classList.add('card')
     div.classList.add('pointer')
-    img.setAttribute('src', `../img/${meme.img}`)
+    img.setAttribute('src', `img/${meme.img}`)
     img.setAttribute('alt', meme.img)
     h5.classList.add('caption')
     h5.innerText = meme.caption

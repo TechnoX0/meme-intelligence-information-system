@@ -1,0 +1,228 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+body {
+    font-size: 16px;
+    padding-top: 4rem;
+    color: white;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.selected {
+    color: black;
+    cursor: not-allowed;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a, a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* #region Header */
+header {
+    font-weight: bold;
+    background-color: #5E8B7E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 100;
+    box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+#title {
+    display: flex;
+    width: 70%;
+    height: 4rem;
+}
+
+#title p {
+    font-size: 1rem;
+    margin: auto 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    width: 30%;
+}
+
+#nav{
+    float: right;
+    display: flex;
+    margin: 0;
+}
+
+#nav li {
+    font-size: 1.2rem;
+    display: inline;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#nav li:hover {
+    background-color: #3e685c;
+    color: white;
+}
+
+#nav a {
+    color: white;
+}
+/* #endregion */
+/* #region MEME Cards */
+/* Main */
+#meme_section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cards {
+    /* color: black; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 5px;
+    /* background-color: #A7C4BC; */
+    background-color: #5E8B7E;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 2rem 1rem;
+    align-items: center;
+    transition: all .2s;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.card .caption {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
+    transform: translate(-5px, -5px);
+}
+
+.card img {
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    height: 20rem;
+    object-fit: cover;
+}
+
+/* Card details */
+#card_details {
+    position: relative;
+    color: black;
+    background-color: #DFEEEA;
+    margin-top: 2rem;
+    width: 60%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+#close_icon {
+    transition: all .2s;
+    color: white;
+    position: absolute;
+    float: right;
+    top: .5rem;
+    right: 1rem;
+    font-size: 2rem;
+}
+
+#close_icon:hover {
+    text-shadow: 3px 3px 3px black;
+}
+
+#img_container {
+    min-height: 20rem;
+}
+
+#img_container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#card_info {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 200px;
+    padding: 0 2rem .2rem;
+}
+
+#card_info p {
+    width: 50%;
+}
+
+#caption {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* #endregion */
+/* #region Footer */
+footer {
+    width: 100%;
+    background-color: #5E8B7E;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    align-items: center;
+}
+
+#copyright {
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+}
+
+/* #endregion */
+
+@media (max-width: 1024px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        width: 100%;
+    }
+}

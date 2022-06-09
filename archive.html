@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e9f315874a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Meme Intelligence Information System</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div id="header">
+                <div id="title">
+                    <p>Meme Intelligence Information System</p>
+                </div>
+
+                <nav>
+                    <div class="container">
+                        <ul id="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="selected">Archive</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="meme_section">
+        <div id="cards">
+            <!-- <div class="card" data-id="0001">
+                <img src="img/meme2.jpg" alt="">
+                <h5 class="caption">Is this a Bird</h5>
+            </div> -->
+        </div>
+
+        <div id="card_details" style="display: none">
+            <span onclick="toggleCards(cards, cardDetails)"><i class="fa-solid fa-xmark pointer" id="close_icon"></i></span>
+            <div id="img_container">
+                <img src="" alt="" id="img">
+            </div>
+            <p id="caption"></p>
+            <div id="card_info">
+                <p id="from"></p>
+                <p id="popular_on"></p>
+                <p id="og_post"></p>
+                <p id="author"></p>
+                <p id="about"></p>
+                <p id="desc"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="copyright">
+                <p>&copy 2022 MIIS Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/archive.js"></script>
+</body>
+</html>

@@ -119,7 +119,7 @@ cardItem.forEach(card => card.addEventListener('click', () => {
     toggleCards(cards, cardDetails)
     memes.forEach(mm => mm.id == card.dataset.id ? cd = mm: false)
 
-    cardDetails.querySelector('#img').src = `../img/${cd.img}`
+    cardDetails.querySelector('#img').src = `img/${cd.img}`
     cardDetails.querySelector('#caption').innerText = cd.caption
     cardDetails.querySelector('#from').innerHTML = `<span class="bold">From</span>: ${cd.from}`
     cardDetails.querySelector('#popular_on').innerHTML = `<span class="bold">Popularrized On</span>: ${cd.popularizedOn}`
